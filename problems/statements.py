@@ -45,3 +45,24 @@ def capFirstAnadFourthLetter(name) :
 print(capFirstAnadFourthLetter("shashwatanand"))
 
 print("###############################################################################################")
+
+#Q6 Given a sentence, return a sentence with the words reversed
+
+def reverse_sentance(sentence) :
+    return " ".join(sentence.split()[::-1])
+
+print(reverse_sentance("I am good person"))
+
+print("###############################################################################################")
+
+#Q7 Given a list of ints, return True if the array contains a 3 next to a 3 somewhere.
+
+def has_33(input) :
+    for index in range(0, len(input) - 1) :
+        if input[index:index+2] == [3, 3] :
+            return True
+    return False
+
+
+print(has_33([1, 3, 1, 3]))
+print(has_33([1, 3, 3]))
