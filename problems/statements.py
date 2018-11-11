@@ -6,13 +6,16 @@ for word in statement.split() :
     if word[0] == "s" :
         print(word)
 
-
+print("###############################################################################################")
 # Q2 Use range() to print all the even numbers from 0 to 10.
 print(list(range(0, 11, 2)))
 
+print("###############################################################################################")
 # Q3 Use List comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
 
 print([x for x in range(1, 51) if x % 3 == 0])
+
+print("###############################################################################################")
 
 # Q4 Write a program that prints the integers from 1 to 100. But for multiples of 
 # three print "Fizz" instead of the number, and for the multiples of five print "Buzz". 
@@ -28,3 +31,17 @@ for num in range(1, 101) :
         print("Buzz")
     else :
         print(num)
+
+
+print("###############################################################################################")
+#@Q5 Write a function that capitalizes the first and fourth letters of a name
+
+def capFirstAnadFourthLetter(name) :
+    if (len(name) > 3) :
+        return name[:3].capitalize() + name[4:].capitalize()
+    else :
+        return "Input is too short"
+
+print(capFirstAnadFourthLetter("shashwatanand"))
+
+print("###############################################################################################")
